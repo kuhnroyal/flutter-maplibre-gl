@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v2.0.3
         with:
           channel: beta
       - name: Lint analysis
@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: subosito/flutter-action@v1
+    - uses: subosito/flutter-action@v2.0.3
       with:
         channel: beta
     - run: flutter pub get
@@ -42,7 +42,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: 'gradle'
-    - uses: subosito/flutter-action@v1
+    - uses: subosito/flutter-action@v2.0.3
       with:
         channel: beta
     - run: flutter pub get
@@ -59,7 +59,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v2.0.3
         with:
           channel: beta
       - run: flutter pub get
@@ -84,7 +84,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: subosito/flutter-action@v1
+    - uses: subosito/flutter-action@v2.0.3
       with:
         channel: beta
     - run: flutter pub get
